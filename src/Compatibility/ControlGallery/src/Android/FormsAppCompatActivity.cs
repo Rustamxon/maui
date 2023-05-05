@@ -50,17 +50,16 @@ namespace Microsoft.Maui.Controls.Compatibility.ControlGallery.Android
 			// so all of our tests run without using the reflection APIs
 			// At some point the Resources class types will go away so
 			// reflection will stop working
-			ResourceManager.Init(null);
-			FormsMaps.Init(this, bundle);
+			//ResourceManager.Init(null);
 
-			//FormsMaterial.Init(this, bundle);
-			AndroidAppLinks.Init(this);
-			Forms.ViewInitialized += (sender, e) =>
-			{
-				//				if (!string.IsNullOrWhiteSpace(e.View.StyleId)) {
-				//					e.NativeView.ContentDescription = e.View.StyleId;
-				//				}
-			};
+			////FormsMaterial.Init(this, bundle);
+			//AndroidAppLinks.Init(this);
+			//Forms.ViewInitialized += (sender, e) =>
+			//{
+			//	//				if (!string.IsNullOrWhiteSpace(e.View.StyleId)) {
+			//	//					e.NativeView.ContentDescription = e.View.StyleId;
+			//	//				}
+			//};
 
 			// uncomment to verify turning off title bar works. This is not intended to be dynamic really.
 			//Forms.SetTitleBarVisibility (AndroidTitleBarVisibility.Never);
