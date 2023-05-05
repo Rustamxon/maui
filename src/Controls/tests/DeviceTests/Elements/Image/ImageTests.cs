@@ -54,7 +54,7 @@ namespace Microsoft.Maui.DeviceTests
 			SetupBuilder();
 			var layout = new VerticalStackLayout();
 
-			var stream = GetType().Assembly.GetManifestResourceStream("Microsoft.Maui.DeviceTests.Resources.Images.red-embedded.png");
+			using var stream = GetType().Assembly.GetManifestResourceStream("red-embedded.png");
 
 			var image = new Image
 			{
