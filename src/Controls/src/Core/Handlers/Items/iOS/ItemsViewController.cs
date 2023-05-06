@@ -181,7 +181,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 			LayoutEmptyView();
 		}
 
-		void InvalidateMeasureIfContentSizeChanged() 
+		void InvalidateMeasureIfContentSizeChanged()
 		{
 			var contentSize = CollectionView.CollectionViewLayout.CollectionViewContentSize;
 
@@ -205,7 +205,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 				{
 					invalidate = true;
 				}
-				
+
 				if (contentSize.Height < screenHeight || contentSize.Height < screenHeight)
 				{
 					invalidate = true;
@@ -220,7 +220,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 			_previousContentSize = contentSize;
 		}
 
-		internal Size? GetSize() 
+		internal Size? GetSize()
 		{
 			if (_emptyViewDisplayed)
 			{
